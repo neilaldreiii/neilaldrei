@@ -35,3 +35,55 @@
 */
 
 
+/* 
+* Timeline
+*/
+.timeline { /* Timeline Container */
+    position: relative;
+    margin: 30px auto;
+}
+
+.timeline::after { /* Actual Time"LINE" */
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #363636;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.timeline-item { /* Container for descriptions / date /etc */
+    display: flex;
+    flex-flow: row;
+    margin: 10px 0;
+}
+.date {
+    position: relative;
+    background-color: inherit;
+    width: 30%;
+    padding: 30px;
+    text-align: right;
+}
+.date::after { /* Timeline DOT */
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -8px;
+    background-color: #F5F5F5;
+    border: 2px solid #363636;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.description {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-bottom: 1px dashed rgb(161, 161, 161);
+}
+.timeline .location {
+    font-size: 10pt;
+}
