@@ -26,8 +26,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
     border: 1px solid;
 }
-.row {
+.col {
     display: flex;
     flex-flow: row;
+    border: 1px solid;
 }
+.col>div {
+    width: 50%;
+    margin: 7px;
+    border: 1px solid;
+}
+
 
