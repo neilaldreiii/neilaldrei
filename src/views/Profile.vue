@@ -2,21 +2,17 @@
     <div class="app">
         <app-banner></app-banner>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <app-intro></app-intro>
-                    <app-timeline></app-timeline>
-                </div>
-                <div class="col">
-                    <app-skills></app-skills>
-                    <app-contacts></app-contacts>
-                </div>
+            <div class="col">
+                <app-intro></app-intro>
+                <app-skills></app-skills>
             </div>
-            <div class="row">
-                <div class="col">
-                    <app-portfolio></app-portfolio>
-                </div>
+            <div class="col">
+                <app-timeline></app-timeline>
+                <app-contacts></app-contacts>
             </div>
+        </div>
+        <div class="col">
+            <app-portfolio></app-portfolio>
         </div>
     </div>
 </template>

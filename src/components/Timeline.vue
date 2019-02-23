@@ -10,32 +10,32 @@
                 </div>
                 <div class="description">
                     <h1>
-                        <!-- title -->
+                        {{ edu.school }}
                     </h1>
                     <p>
-                        <!-- Degree -->
+                        {{ edu.degree }}
                     </p>
                     <p>
-                        <!-- Location -->
+                        {{ edu.location }}
                     </p>
                 </div>
             </div>
             <header>
                 <h1>Experience</h1>
             </header>
-            <div class="timeline-item">
+            <div class="timeline-item" v-for="exp in experience" :key="exp.index">
                 <div class="date">
-                    <!-- Timeline Date -->
+                    {{ exp.date }}
                 </div>
                 <div class="description">
                     <h1>
-                        <!-- title -->
+                        {{ exp.company }}
                     </h1>
                     <p>
-                        <!-- Degree -->
+                        {{ exp.position }}
                     </p>
                     <p>
-                        <!-- Location -->
+                        {{ exp.location }}
                     </p>
                 </div>
             </div>

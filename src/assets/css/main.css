@@ -87,3 +87,13 @@
 .timeline .location {
     font-size: 10pt;
 }
+
+/* 
+ * Timeline -END-
+ */
+
+ /* Portfolio */
+ .portfolio {
+     width: 75%;
+     margin: auto;
+ }
