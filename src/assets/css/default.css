@@ -1,0 +1,31 @@
+
+/*
+ * Default configurations for the page
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F5;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+.container {
+    width: 75%; /* for 1920x1080 or larger screen */
+    margin: auto; /* Centered */  
+    padding: 15px;
+    border: 1px solid;
+}
+.row {
+    display: flex;
+    flex-flow: row;
+}
+
