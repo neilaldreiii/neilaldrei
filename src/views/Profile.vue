@@ -14,6 +14,9 @@
         <div class="col">
             <app-portfolio></app-portfolio>
         </div>
+        <div class="col">
+            <app-footer></app-footer>
+        </div>
     </div>
 </template>
 
@@ -28,6 +31,7 @@ import Intro from "@/components/Intro";
 import Skills from "@/components/Skills";
 import Portfolio from "@/components/Portfolio";
 import Contacts from "@/components/Contacts";
+import AppFooter from "@/components/AppFooter";
 
 export default {
     name: "profile",
@@ -37,7 +41,8 @@ export default {
         "app-intro": Intro,
         "app-skills": Skills,
         "app-portfolio": Portfolio,
-        "app-contacts": Contacts
+        "app-contacts": Contacts,
+        "app-footer": AppFooter
     }
 }
 </script>
