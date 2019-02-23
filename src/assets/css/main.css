@@ -1,0 +1,39 @@
+/*
+* Banner
+*/
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+.banner>div {
+    margin: auto;
+}
+.dp-container {
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+    background: #FFF;
+}
+.main-info {
+    margin: 15px;
+}
+.main-info h1, .main-info h2, .main-info h6 {
+    margin: 0;
+}
+.main-info h6 {
+    color: rgb(136, 136, 136);
+}
+.profile-social a {
+    margin: 15px;
+}
+
+/*
+*
+* Banner - END -
+*
+* Introduction - START -
+*
+*/
