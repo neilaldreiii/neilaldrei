@@ -5,10 +5,10 @@
             <div class="col">
                 <app-intro></app-intro>
                 <app-skills></app-skills>
+                <app-contacts></app-contacts>
             </div>
             <div class="col">
                 <app-timeline></app-timeline>
-                <app-contacts></app-contacts>
             </div>
         </div>
         <div class="col">

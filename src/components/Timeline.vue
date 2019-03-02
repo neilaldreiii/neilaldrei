@@ -76,15 +76,9 @@ export default {
             ],
             experience: [
                 {
-                    company: "Triton Swim Club",
-                    date: "Jul 2018 - Nov 2018",
-                    position: "Freelancer - Full Stack Developer",
-                    location: "Naga City, Camarines Sur, PH"
-                },
-                {
-                    company: "MAADD'S Enterprise",
-                    date: "June 2018",
-                    position: "Freelancer - Full Stack Developer",
+                    Company: "Freelancer",
+                    date: "Nov 2017 - Present",
+                    position: "Full Stack Web Developer",
                     location: "Naga City, Camarines Sur, PH"
                 },
                 {

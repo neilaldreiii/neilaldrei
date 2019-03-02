@@ -1,6 +1,11 @@
 <template>
     <div class="contacts">
-        <p>Contacts</p>
+        <header>
+            <h1>Contacts</h1>
+        </header>
+        <div class="content">
+
+        </div>
     </div>
 </template>
 
