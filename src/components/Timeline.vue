@@ -6,13 +6,13 @@
             </header>
             <div class="timeline-item" v-for="edu in educations" :key="edu.index">
                 <div class="date">
-                    <h3 style="font-size: 9pt;">{{ edu.date }}</h3>
+                    <h3>{{ edu.date }}</h3>
                 </div>
                 <div class="description">
                     <h1>
                         {{ edu.school }}
                     </h1>
-                    <p>
+                    <p class="school">
                         {{ edu.degree }}
                     </p>
                     <p>
@@ -25,7 +25,7 @@
             </header>
             <div class="timeline-item" v-for="exp in experience" :key="exp.index">
                 <div class="date">
-                    {{ exp.date }}
+                    <h3>{{ exp.date }}</h3>
                 </div>
                 <div class="description">
                     <h1>
@@ -76,7 +76,7 @@ export default {
             ],
             experience: [
                 {
-                    Company: "Freelancer",
+                    company: "Freelancer",
                     date: "Nov 2017 - Present",
                     position: "Full Stack Web Developer",
                     location: "Naga City, Camarines Sur, PH"
@@ -97,4 +97,5 @@ export default {
 .date h3{
     font-family: sans-serif;
 }
+
 </style>

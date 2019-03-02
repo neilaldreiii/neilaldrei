@@ -38,21 +38,24 @@
 /* 
 * Timeline
 */
+.app-timeline {
+    flex-grow: 1;
+}
 .timeline { /* Timeline Container */
     position: relative;
-    margin: 30px auto;
+    margin: auto;
 }
 
 .timeline::after { /* Actual Time"LINE" */
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #363636;
+    background-color: #e8554e;
     top: 0;
     bottom: 0;
     left: 30%;
     margin-left: -3px;
-    z-index: -1;
+    z-index: 1;
 }
 .timeline-item { /* Container for descriptions / date /etc */
     display: flex;
@@ -71,10 +74,10 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    right: -8px;
-    background-color: #F5F5F5;
-    border: 2px solid #363636;
-    top: 30px;
+    right: -7px;
+    background-color: #e8554e;
+    border: 1px solid #df5757;
+    top: 28px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -86,6 +89,22 @@
 }
 .timeline .location {
     font-size: 10pt;
+}
+.timeline .date h3 {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    font-size: 9pt;
+}
+.timeline .description h1 {
+    margin: 0;
+    font-size: 20pt;
+}
+.timeline p:first-of-type {
+    font-size: 11pt;
+}
+.timeline p:last-of-type {
+    font-size: 10pt;
+    color: #a5a5a5;
 }
 
 /* 

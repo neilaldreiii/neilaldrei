@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="app-footer">
         <footer>
             <div class="footer-contacts">
                 <p>Naga City, Camarines Sur, PH</p>

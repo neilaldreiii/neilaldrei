@@ -2,12 +2,12 @@
     <div class="app">
         <app-banner></app-banner>
         <div class="container">
-            <div class="col">
+            <div class="left">
                 <app-intro></app-intro>
                 <app-skills></app-skills>
                 <app-contacts></app-contacts>
             </div>
-            <div class="col">
+            <div class="right">
                 <app-timeline></app-timeline>
             </div>
         </div>
