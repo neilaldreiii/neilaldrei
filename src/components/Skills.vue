@@ -1,5 +1,5 @@
 <template>
-    <div class="skills">
+    <div class="app-skills">
         <header>
             <h1>Skills</h1>
         </header>
@@ -7,7 +7,7 @@
             <div class="skills">
                 <div class="skill" v-for="skill in skills" :key="skill.index">
                     <div class="skill-info">
-                        <h1>{{ skill.skill }}</h1>
+                        <h4>{{ skill.skill }}</h4>
                         <p>{{ skill.progress }}</p>
                     </div>
                     <div class="progress-bar">
@@ -18,7 +18,7 @@
             <div class="add-skills" v-if="showExtras">
                 <div class="skill" v-for="extras in skillsHidden" :key="extras.index">
                     <div class="skill-info">
-                        <h1>{{ extras.skill }}</h1>
+                        <h4>{{ extras.skill }}</h4>
                         <p>{{ extras.progress }}</p>
                     </div>
                     <div class="progress-bar">
