@@ -269,3 +269,17 @@
 .project-overlay a.visit:hover {
     background: #36976c;
 }
+
+/*  icons */
+.icon {
+    font-size: 22pt;
+}
+.github {
+    color: #333;
+}
+.twitter {
+    color: #55acee;
+}
+.mes {
+    color: #0084ff;
+}

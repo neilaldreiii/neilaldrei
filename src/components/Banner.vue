@@ -5,9 +5,9 @@
                 <div class="dp"></div>
             </div>
             <div class="profile-social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="#" class="github icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="twitter icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mes icon"><i class="fab fa-facebook-messenger"></i></a>
             </div>
         </div>
         <div class="profile-info">
