@@ -6,7 +6,6 @@
     display: flex;
     flex-flow: row;
     justify-content: Center;
-    border: 1px solid;
 }
 .banner>div {
     margin: auto 20px;
@@ -163,7 +162,7 @@
     background: #e8554e;
     color: #FFF;
     margin: 5px auto;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 4px;
     font-size: 11pt;
     box-shadow: 3px 3px 12px rgb(175, 175, 175);
@@ -173,7 +172,9 @@
     background: #dd3027;
     cursor: pointer;
 }
-
+.skill-controls .icon {
+    font-size: 11pt;
+}
 /* Skills - END - */
 
 /* Contacts */
@@ -269,6 +270,9 @@
 .project-overlay a.visit:hover {
     background: #36976c;
 }
+.project-overlay .icon {
+    font-size: 11pt;
+}
 
 /*  icons */
 .icon {
@@ -282,4 +286,20 @@
 }
 .mes {
     color: #0084ff;
+}
+
+/* Footer */
+footer {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.footer-social {
+    padding: 25px;
+}
+.footer-social a{
+    margin: 15px;
+}
+footer .copy {
+    font-size: 11pt;
 }
