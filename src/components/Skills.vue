@@ -30,11 +30,15 @@
                 <button @click="showExtras = !showExtras">
                     <span v-if="!showExtras">
                         Show more
-                        <!-- Icon Goes Here -->
+                        <span class="icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </span>
                     </span>
                     <span v-else>
                         Show Less
-                        <!-- Icon Goes Here -->
+                        <span class="icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </span>
                     </span>
                 </button>
             </div>

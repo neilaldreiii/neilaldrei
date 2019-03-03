@@ -10,9 +10,9 @@
                 <p>+63915-204-4704</p>
             </div>
             <div class="social">
-                <a href="#">G</a>
-                <a href="#">T</a>
-                <a href="#">M</a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
             </div>
         </div>
     </div>

@@ -21,12 +21,23 @@
                     <div class="project-img" :class="pro.img"></div>
                     <div class="project-overlay">
                         <h1>{{ pro.companyName }}</h1>
-                        <a :href="pro.git" class="git">GitHub</a>
+                        <a :href="pro.git" class="git">GitHub 
+                            <span class="icon">
+                                <i class="fas fa-code-branch"></i>
+                            </span>
+                        </a>
                         <span v-if="pro.hasDeployed">
-                            <a :href="pro.url" class="visit">Visit</a>
+                            <a :href="pro.url" class="visit">Visit
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
                         </span>
                         <span v-else>
                             <p>{{ pro.url }}</p>
+                            <span class="icon">
+                                <i class="far fa-frown"></i>
+                            </span>
                         </span>
                     </div>
                 </div>
