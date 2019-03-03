@@ -1,5 +1,5 @@
 <template>
-    <div class="contacts">
+    <div class="app-contacts">
         <header>
             <h1>Contacts</h1>
         </header>

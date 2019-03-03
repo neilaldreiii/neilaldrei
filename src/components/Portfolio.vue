@@ -4,22 +4,30 @@
             <h1>Portfolio</h1>
         </header>
         <div class="content">
+            <!-- 
+                Projects set to grid
+             -->
             <div class="projects">
-                <div v-for="pro in projects" :key="pro.index" class="projec">
-                    <div class="project-img">
-                        <img src="" alt="">
-                    </div>
+                <!-- 
+                    Iterate through projects 
+                    and get 
+                    their property names
+                 -->
+                <div v-for="pro in projects" :key="pro.index" class="project">
+                    <!-- 
+                        Project's Images 
+                        Set as background image
+                    -->
+                    <div class="project-img" :class="pro.img"></div>
                     <div class="project-overlay">
                         <h1>{{ pro.companyName }}</h1>
-                        <div class="project-links">
-                            <a :href="pro.git">GitHub</a>
-                            <span v-if="pro.hasDeployed">
-                                <a :href="pro.url">Visit</a>
-                            </span>
-                            <span v-else>
-                                <p>{{ pro.url }}</p>
-                            </span>
-                        </div>
+                        <a :href="pro.git" class="git">GitHub</a>
+                        <span v-if="pro.hasDeployed">
+                            <a :href="pro.url" class="visit">Visit</a>
+                        </span>
+                        <span v-else>
+                            <p>{{ pro.url }}</p>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -37,18 +45,21 @@ export default {
                     companyName: "MAADD'S Enterprise",
                     git: "https://www.github.com./neilaldreiii/MAADDS",
                     url: "https://www.maaddsenterprise.firebaseapp.com",
+                    img: "maadds",
                     hasDeployed: true
                 },
                 {
                     companyName: "Triton Swim Club",
                     git: "https://www.github.com./neilaldreiii/triton-laravel",
                     url: "This project has not been deployed yet.",
+                    img: "triton",
                     hasDeployed: false
                 },
                 {
                     companyName: "CBSUA College Of Veterinary Medicine Poll",
                     git: "https://www.github.com./neilaldreiii/CBSUA-CVM",
                     url: "https://www.cbsua-cvm-poll.firebaseapp.com",
+                    img: "cvm",
                     hasDeployed: true
                 }
             ]

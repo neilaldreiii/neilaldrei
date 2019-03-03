@@ -127,9 +127,6 @@ export default {
                 }
             ]
         }
-    },
-    created() {
-        console.log(this.skillsHidden.length);
     }
 }
 </script>
