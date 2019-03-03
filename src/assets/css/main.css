@@ -5,11 +5,11 @@
     height: 100vh;
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: Center;
     border: 1px solid;
 }
 .banner>div {
-    margin: auto;
+    margin: auto 20px;
 }
 .dp-container {
     height: 275px;
@@ -17,27 +17,29 @@
     border-radius: 50%;
     background: #FFF;
 }
-.main-info {
-    margin: 15px;
+.profile-info .profile-social {
+    padding: 10px;
+    margin: 20px 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
 }
-.main-info h1, .main-info h2, .main-info h6 {
+.main-info h2, .main-info h6{
     margin: 0;
 }
-.main-info h6 {
-    color: rgb(136, 136, 136);
+.main-info h1 {
+    margin: 0;
+    font-size: 28pt;
 }
-.profile-social a {
-    margin: 15px;
+.profile-contacts{
+    padding: 20px 0;
 }
+.profile-contacts h3 {
+    font-size: 12pt;
+}
+/* Banner - END - */
 
-/*
-* Banner - END -
-*/
-
-
-/* 
-* Timeline
-*/
+/* Timeline */
 .app-timeline {
     flex-grow: 1;
 }
