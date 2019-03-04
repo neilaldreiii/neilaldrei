@@ -14,7 +14,17 @@
     height: 275px;
     width: 275px;
     border-radius: 50%;
+    padding: 7px;
     background: #FFF;
+    box-shadow: 0 0 12px #ccc;
+}
+.dp {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-image: url(../images/neil.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .profile-info .profile-social {
     padding: 10px;
@@ -35,6 +45,19 @@
 }
 .profile-contacts h3 {
     font-size: 12pt;
+}
+.profile-contacts .download {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    background: #e8554e;
+    box-shadow: 3px 3px 6px #ccc;
+    padding:5px 15px;
+    border-radius: 50px;
+    transition: background 0.5s;
+}
+.profile-contacts .download:hover{
+    background: #cf443d;
 }
 /* Banner - END - */
 
@@ -121,8 +144,8 @@
     padding: 5px;
     margin: 15px 0;
 }
-.skills {
-    border-bottom: 1px dashed #ddd;
+.add-skills {
+    border-top: 1px dashed #ddd;
 }
 .skill {
     border: 1px solid #ddd;

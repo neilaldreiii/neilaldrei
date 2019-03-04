@@ -22,7 +22,10 @@
                 <h3>Naga City, Camarines Sur, PH</h3>
                 <h3>neilaldreiii@gmail.com</h3>
                 <h3>+63915-204-4704</h3>
-                <a href="#">Resume</a>
+                <a href="https://drive.google.com/open?id=1mNdA-2Mz6fgxTA_cxG0MVED-vs0NLmUk" target="_blank" class="download">
+                    Resume 
+                    <i class="fas fa-file-download"></i>
+                </a>
             </div>
         </div>
     </div>
