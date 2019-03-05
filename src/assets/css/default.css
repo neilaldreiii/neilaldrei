@@ -25,6 +25,7 @@ header {
     line-height: 60px;
     color: white;
     position: relative;
+    z-index: 10;
 }
 header:before {
     content: "";
@@ -35,6 +36,7 @@ header:before {
     position: absolute;
     left: 100%;
     top: 0px;
+    z-index: 10;
 }
 header h1 {
     margin: 0 7px;
@@ -63,4 +65,480 @@ header h1 {
 }
 .content {
     padding: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 320px) {
+    header {
+        display: block;
+        padding: 10px;
+        width: 100%!important;
+        line-height: inherit!important;
+    }
+    header:before {
+        content: "";
+        display: none!important;
+    }
+    header h1 {
+        font-size: 17pt!important;
+        margin: auto;
+    }
+    .container {
+        width: 100%!important;
+        flex-flow: column!important;
+        padding: 5px!important;
+    }
+    .container>div {
+        width: 100%!important;
+        margin: 0!important;
+        padding: 5px!important;
+    }
+    .container .left>div, .container .right>div, .col {
+        margin: 10px 5px!important;
+    }
+    .content {
+        padding: 5px!important;
+    }
+    .icon {
+        font-size: 18pt!important;
+    }
+    .banner {
+        height: auto!important;
+        flex-flow: column!important;
+    }
+    .dp-container {
+        height: 155px!important;
+        width: 155px!important;
+        padding: 3px!important;
+        margin: 15px auto!important;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .profile-social {
+        justify-content: center!important;
+    }
+    .profile-social a {
+        margin: 2px 5px;
+    }
+    .skill-info {
+        padding: 3px!important;
+        flex-flow: column!important;
+        justify-content: flex-start!important;
+    }
+    .skill .skill-info h4 {
+        font-size: 12pt!important;
+    }
+    .skill .skill-info p {
+        font-size: 9pt!important;
+        margin: 0!important;
+    }
+    .skill-controls .icon {
+        font-size: 11pt!important;
+    }
+    .timeline .description h1 {
+        font-size: 15pt!important;
+    }
+    .portfolio {
+        width: 100%!important;
+    }
+    .projects {
+        display: flex!important;
+        flex-flow: column;
+        padding: 5px!important;
+    }
+    .project {
+        height: auto!important;
+        margin: 10px 0!important;
+        border: 1px solid #ddd;
+        box-shadow: none!important;
+    }
+    .project-img {
+        height: 115px!important;
+    }
+    .project-overlay {
+        position: static!important;
+        opacity: 1!important;
+        background: #FFF!important;
+        color: #555!important;
+        display: block!important;
+        border-top: 1px solid #ddd;
+    }
+    .project-overlay h1 {
+        margin: 5px!important;
+        font-size: 11pt!important;
+    }
+    .project-overlay a{
+        margin: 5px!important;
+        font-size: 9pt!important;
+        padding: 3px 9px!important;
+    }
+    .project-overlay p {
+        font-size: 10pt!important;
+    }
+    .project-overlay .icon {
+        font-size: 8pt!important;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    header {
+        display: block;
+        padding: 10px;
+        width: 100%!important;
+        line-height: inherit!important;
+    }
+    header:before {
+        content: "";
+        display: none!important;
+    }
+    header h1 {
+        font-size: 17pt!important;
+        margin: auto;
+    }
+    .container {
+        width: 100%!important;
+        flex-flow: column!important;
+        padding: 5px!important;
+    }
+    .container>div {
+        width: 100%!important;
+        margin: 0!important;
+        padding: 5px!important;
+    }
+    .container .left>div, .container .right>div, .col {
+        margin: 10px 5px!important;
+    }
+    .content {
+        padding: 5px!important;
+    }
+    .icon {
+        font-size: 18pt!important;
+    }
+    .banner {
+        height: auto!important;
+        flex-flow: column!important;
+    }
+    .dp-container {
+        height: 155px!important;
+        width: 155px!important;
+        padding: 3px!important;
+        margin: 15px auto!important;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .profile-social {
+        justify-content: center!important;
+    }
+    .profile-social a{
+        margin: 3px 7px !important;
+    }
+    .skill-info {
+        padding: 3px!important;
+        flex-flow: column!important;
+        justify-content: flex-start!important;
+    }
+    .skill .skill-info h4 {
+        font-size: 12pt!important;
+    }
+    .skill .skill-info p {
+        font-size: 9pt!important;
+        margin: 0!important;
+    }
+    .skill-controls .icon {
+        font-size: 11pt!important;
+    }
+    .timeline .description h1 {
+        font-size: 15pt!important;
+    }
+    .portfolio {
+        width: 100%!important;
+    }
+    .projects {
+        display: flex!important;
+        flex-flow: column;
+        padding: 5px!important;
+    }
+    .project {
+        height: auto!important;
+        margin: 10px 0!important;
+        border: 1px solid #ddd;
+        box-shadow: none!important;
+    }
+    .project-img {
+        height: 115px!important;
+    }
+    .project-overlay {
+        position: static!important;
+        opacity: 1!important;
+        background: #FFF!important;
+        color: #555!important;
+        display: block!important;
+        border-top: 1px solid #ddd;
+    }
+    .project-overlay h1 {
+        margin: 5px!important;
+        font-size: 11pt!important;
+    }
+    .project-overlay a{
+        margin: 5px!important;
+        font-size: 9pt!important;
+        padding: 3px 9px!important;
+    }
+    .project-overlay p {
+        font-size: 10pt!important;
+    }
+    .project-overlay .icon {
+        font-size: 8pt!important;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+    header {
+        display: block;
+        padding: 10px;
+        width: 100%!important;
+        line-height: inherit!important;
+    }
+    header:before {
+        content: "";
+        display: none!important;
+    }
+    header h1 {
+        font-size: 17pt!important;
+        margin: auto;
+    }
+    .container {
+        width: 100%!important;
+        flex-flow: column!important;
+        padding: 5px!important;
+    }
+    .container>div {
+        width: 100%!important;
+        margin: 0!important;
+        padding: 5px!important;
+    }
+    .container .left>div, .container .right>div, .col {
+        margin: 10px 5px!important;
+    }
+    .content {
+        padding: 5px!important;
+    }
+    .icon {
+        font-size: 18pt!important;
+    }
+    .banner {
+        height: auto!important;
+        flex-flow: column!important;
+    }
+    .dp-container {
+        height: 155px!important;
+        width: 155px!important;
+        padding: 3px!important;
+        margin: 15px auto!important;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .profile-social {
+        justify-content: center!important;
+    }
+    .profile-social a {
+        margin: 4px 8px;
+    }
+    .skill-info {
+        padding: 3px!important;
+        flex-flow: column!important;
+        justify-content: flex-start!important;
+    }
+    .skill .skill-info h4 {
+        font-size: 12pt!important;
+    }
+    .skill .skill-info p {
+        font-size: 9pt!important;
+        margin: 0!important;
+    }
+    .skill-controls .icon {
+        font-size: 11pt!important;
+    }
+    .timeline .description h1 {
+        font-size: 15pt!important;
+    }
+    .portfolio {
+        width: 100%!important;
+    }
+    .projects {
+        display: flex!important;
+        flex-flow: column;
+        padding: 5px!important;
+    }
+    .project {
+        height: auto!important;
+        margin: 10px 0!important;
+        border: 1px solid #ddd;
+        box-shadow: none!important;
+    }
+    .project-img {
+        height: 115px!important;
+    }
+    .project-overlay {
+        position: static!important;
+        opacity: 1!important;
+        background: #FFF!important;
+        color: #555!important;
+        display: block!important;
+        border-top: 1px solid #ddd;
+    }
+    .project-overlay h1 {
+        margin: 5px!important;
+        font-size: 11pt!important;
+    }
+    .project-overlay a{
+        margin: 5px!important;
+        font-size: 9pt!important;
+        padding: 3px 9px!important;
+    }
+    .project-overlay p {
+        font-size: 10pt!important;
+    }
+    .project-overlay .icon {
+        font-size: 8pt!important;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    header {
+        display: block;
+        padding: 10px;
+        width: 100%!important;
+        line-height: inherit!important;
+    }
+    header:before {
+        content: "";
+        display: none!important;
+    }
+    header h1 {
+        font-size: 17pt!important;
+        margin: auto;
+    }
+    .container {
+        width: 100%!important;
+        flex-flow: column!important;
+        padding: 5px!important;
+    }
+    .container>div {
+        width: 100%!important;
+        margin: 0!important;
+        padding: 5px!important;
+    }
+    .container .left>div, .container .right>div, .col {
+        margin: 10px 5px!important;
+    }
+    .content {
+        padding: 5px!important;
+    }
+    .icon {
+        font-size: 18pt!important;
+    }
+    .banner {
+        height: auto!important;
+        flex-flow: column!important;
+    }
+    .dp-container {
+        height: 225px!important;
+        width: 225px!important;
+        padding: 3px!important;
+        margin: 15px auto!important;
+    }
+    .profile-info {
+        text-align: center;
+    }
+    .skill-info {
+        padding: 3px!important;
+        flex-flow: column!important;
+        justify-content: flex-start!important;
+    }
+    .skill .skill-info h4 {
+        font-size: 12pt!important;
+    }
+    .skill .skill-info p {
+        font-size: 9pt!important;
+        margin: 0!important;
+    }
+    .skill-controls .icon {
+        font-size: 11pt!important;
+    }
+    .timeline .description h1 {
+        font-size: 15pt!important;
+    }
+    .portfolio {
+        width: 100%!important;
+    }
+    .projects {
+        display: flex!important;
+        flex-flow: column;
+        padding: 5px!important;
+    }
+    .project {
+        height: auto!important;
+        margin: 10px 0!important;
+        border: 1px solid #ddd;
+        box-shadow: none!important;
+    }
+    .project-img {
+        height: 275px!important;
+    }
+    .project-overlay {
+        position: static!important;
+        opacity: 1!important;
+        background: #FFF!important;
+        color: #555!important;
+        display: block!important;
+        border-top: 1px solid #ddd;
+    }
+    .project-overlay h1 {
+        margin: 5px!important;
+        font-size: 11pt!important;
+    }
+    .project-overlay a {
+        margin: 5px!important;
+        font-size: 9pt!important;
+        padding: 3px 9px!important;
+    }
+    .project-overlay p {
+        font-size: 10pt!important;
+    }
+    .project-overlay .icon {
+        font-size: 8pt!important;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        width: 100%!important;
+        padding: 5px!important;
+    }
+    .container>div {
+        margin: 0!important;
+        padding: 5px!important;
+    }
+    .container .left>div, .container .right>div, .col {
+        margin: 10px 5px!important;
+    }
+    .content {
+        padding: 5px!important;
+    }
+    .banner {
+        height: 75vh!important;
+    }
+    .timeline .description h1 {
+        font-size: 15pt!important;
+    }
+    .portfolio {
+        width: 100%!important;
+    }
+    .project {
+        height: 325px!important;
+    }
 }
