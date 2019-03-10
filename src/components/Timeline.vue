@@ -51,13 +51,19 @@ export default {
             educations: [
                 {
                     school: "University Of Nueva Caceres",
-                    date: "2016 - Present",
+                    date: "2016 - 2017",
+                    degree: "Bachelor of Science in Information Technology",
+                    location: "Naga City, Camarines Sur, PH"
+                },
+                {
+                    school: "STI College",
+                    date: "2012 - 2015",
                     degree: "Bachelor of Science in Information Technology",
                     location: "Naga City, Camarines Sur, PH"
                 },
                 {
                     school: "Naga College Foundation",
-                    date: "2011 - 2013",
+                    date: "2011 - 2012",
                     degree: "Bachelor Of Science in Criminology",
                     location: "Naga City, Camarines Sur, PH"
                 },
@@ -77,7 +83,7 @@ export default {
             experience: [
                 {
                     company: "Freelancer",
-                    date: "Nov 2017 - Present",
+                    date: "Jan 2018 - Present",
                     position: "Full Stack Web Developer",
                     location: "Naga City, Camarines Sur, PH"
                 },
