@@ -398,6 +398,9 @@ footer {
     flex-flow: row;
     justify-content: space-evenly;
 }
+.footer-contacts {
+    margin: auto 0;
+}
 .footer-social a{
     margin: 15px;
 }
