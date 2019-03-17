@@ -49,6 +49,8 @@
 </template>
 
 <script>
+import db from "@/firebase/firebaseInit";
+
 export default {
     name: "contacts",
     data() {
