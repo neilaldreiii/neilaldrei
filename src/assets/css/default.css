@@ -48,8 +48,8 @@ header h1 {
     flex-flow: row;
 }
 .container>div, .col {
-    margin: 5px 5px;
-    padding: 15px;
+    margin: 0 5px;
+    padding: 3px 15px;
 }
 .container>.left {
     width: 40%;
