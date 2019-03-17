@@ -321,6 +321,11 @@ footer {
     margin: auto;
     text-align: center;
 }
+.footer-wrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
 .footer-social {
     padding: 25px;
 }
@@ -329,4 +334,10 @@ footer {
 }
 footer .copy {
     font-size: 11pt;
+}
+.map {
+    background: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 0 12px #ccc;
+    padding: 5px;
 }
