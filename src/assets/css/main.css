@@ -426,9 +426,3 @@ footer {
 footer .copy {
     font-size: 11pt;
 }
-.map {
-    background: #FFF;
-    border-radius: 3px;
-    box-shadow: 0 0 12px #ccc;
-    padding: 5px;
-}
