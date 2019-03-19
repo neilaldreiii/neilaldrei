@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "neil-aldrei"
+    "default": "neil-aldrei",
+    "Deployment": "neilaldrei-profile"
   }
 }
