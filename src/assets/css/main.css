@@ -285,6 +285,26 @@
     background: #32855f;
     cursor: pointer;
 }
+.form-action .sent {
+    background: silver;
+    color: #808080;
+}
+.alerts ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.alerts ul li {
+    display: block;
+}
+.alerts p {
+    color: tomato;
+    text-align: center;
+}
+.success p {
+    color: #42b883;
+    text-align: center;
+}
 /* Contacts - END - */
 
 /* Portfolio */
@@ -371,7 +391,6 @@
 .project-overlay .icon {
     font-size: 11pt;
 }
-
 /*  icons */
 .icon {
     font-size: 22pt;
