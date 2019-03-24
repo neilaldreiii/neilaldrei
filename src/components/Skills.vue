@@ -1,7 +1,7 @@
 <template>
     <div class="app-skills">
         <header>
-            <h1>Skills</h1>
+            <h1 v-in-viewport.once>Skills</h1>
         </header>
         <div class="content">
             <div class="skills">
@@ -11,33 +11,35 @@
                         <p>{{ skill.progress }}</p>
                     </div>
                     <div class="progress-bar">
-                        <div class="bar-fill" :style="{width: skill.progress}"></div>
+                        <div :class="skill.skill" class="bar-fill" v-in-viewport></div>
                     </div>
                 </div>
             </div>
-            <div class="add-skills" v-if="showExtras">
-                <div class="skill" v-for="extras in skillsHidden" :key="extras.index">
-                    <div class="skill-info">
-                        <h4>{{ extras.skill }}</h4>
-                        <p>{{ extras.progress }}</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar-fill" :style="{width: extras.progress}"></div>
+            <transition name="fade">
+                <div class="add-skills" v-if="showExtras">
+                    <div class="skill" v-for="extras in skillsHidden" :key="extras.index">
+                        <div class="skill-info">
+                            <h4>{{ extras.skill }}</h4>
+                            <p>{{ extras.progress }}</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bar-fill" :style="{width: extras.progress}"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
             <div class="skill-controls">
                 <button @click="showExtras = !showExtras">
                     <span v-if="!showExtras">
                         Show more
                         <span class="icon">
-                            <i class="fas fa-expand-arrows-alt"></i>
+                            <i class="fas fa-angle-double-down"></i>
                         </span>
                     </span>
                     <span v-else>
                         Show Less
                         <span class="icon">
-                            <i class="fas fa-compress-arrows-alt"></i>
+                            <i class="fas fa-angle-double-up"></i>
                         </span>
                     </span>
                 </button>
@@ -68,7 +70,7 @@ export default {
                     progress: "80%"
                 },
                 {
-                    skill: "Vue.JS",
+                    skill: "VueJS",
                     progress: "75%"
                 },
                 {
@@ -98,7 +100,7 @@ export default {
                     progress: "40%"
                 },
                 {
-                    skill: "ASP.NET 4.6",
+                    skill: "ASP.NET MVC",
                     progress: "40%"
                 },
                 {
@@ -106,7 +108,7 @@ export default {
                     progress: "35%"
                 },
                 {
-                    skill: "React JS",
+                    skill: "React.JS",
                     progress: "30%"
                 },
                 {
@@ -134,3 +136,12 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-action {
+    transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+</style>

@@ -1,23 +1,11 @@
 <template>
     <div class="portfolio">
         <header>
-            <h1>Portfolio</h1>
+            <h1 v-in-viewport.once>Portfolio</h1>
         </header>
         <div class="content">
-            <!-- 
-                Projects set to grid
-             -->
             <div class="projects">
-                <!-- 
-                    Iterate through projects 
-                    and get 
-                    their property names
-                 -->
-                <div v-for="pro in projects" :key="pro.index" class="project">
-                    <!-- 
-                        Project's Images 
-                        Set as background image
-                    -->
+                <div v-for="pro in projects" :key="pro.index" class="project" v-in-viewport.fully.once>
                     <div class="project-img" :class="pro.img"></div>
                     <div class="project-overlay">
                         <h1>{{ pro.companyName }}</h1>

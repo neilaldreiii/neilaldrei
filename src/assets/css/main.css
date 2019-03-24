@@ -17,6 +17,11 @@
     padding: 7px;
     background: #FFF;
     box-shadow: 0 0 12px #ccc;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.dp-container.in-viewport {
+    opacity: 1;
 }
 .dp {
     height: 100%;
@@ -25,6 +30,12 @@
     background-image: url(../images/neil.jpg);
     background-position: center;
     background-size: cover;
+    opacity: 0;
+    transition: opacity 4s;
+}
+.dp.in-viewport {
+    transition-delay: .2s;
+    opacity: 1;
 }
 .profile-info .profile-social {
     padding: 5px;
@@ -35,13 +46,34 @@
 }
 .main-info h2, .main-info h6{
     margin: 0;
+    opacity: 0;
+    transition: opacity 1s;
 }
 .main-info h1 {
     margin: 0;
+    opacity: 0;
     font-size: 28pt;
+    transition: opacity 2s;
+}
+.main-info h2.in-viewport {
+    opacity: 1;
+}
+.main-info h1.in-viewport {
+    transition-delay: .5s;
+    opacity: 1;
+}
+.main-info h6.in-viewport {
+    transition-delay: 1s;
+    opacity: 1;
 }
 .profile-contacts{
     padding: 20px 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.profile-contacts.in-viewport {
+    opacity: 1;
+    transition-delay: 1.5s;
 }
 .profile-contacts h3 {
     font-size: 12pt;
@@ -65,13 +97,19 @@
 .introduction .content p {
     text-align: justify;
     padding: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.introduction .content p.in-viewport {
+    opacity: 1;
+    transition-delay: .5s;
 }
 
 /* Timeline */
 .app-timeline {
     flex-grow: 1;
 }
-.timeline { /* Timeline Container */
+.timeline /* Timeline Container */ { 
     position: relative;
     margin: auto;
 }
@@ -97,6 +135,8 @@
     width: 30%;
     padding: 30px;
     text-align: right;
+    opacity: 0;
+    transition: opacity 1s;
 }
 .date::after { /* Timeline DOT */
     content: '';
@@ -110,11 +150,21 @@
     border-radius: 50%;
     z-index: 1;
 }
+.date.in-viewport {
+    opacity: 1;
+    transition-delay: .5s;
+}
 .description {
     width: 60%;
     margin: auto;
     padding: 20px;
     border-bottom: 1px dashed rgb(161, 161, 161);
+    opacity: 0;
+    transition: opacity 1s;
+}
+.description.in-viewport {
+    opacity: 1;
+    transition-delay: 0.5s;
 }
 .timeline .location {
     font-size: 10pt;
@@ -127,13 +177,31 @@
 .timeline .description h1 {
     margin: 0;
     font-size: 20pt;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.timeline .description h1.in-viewport {
+    opacity: 1;
+    transition-delay: 1s;
 }
 .timeline p:first-of-type {
     font-size: 11pt;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.timeline p:first-of-type.in-viewport {
+    opacity: 1;
+    transition-delay: 1.5s;
 }
 .timeline p:last-of-type {
     font-size: 10pt;
     color: #a5a5a5;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.timeline p:last-of-type.in-viewport {
+    opacity: 1;
+    transition-delay: 2s;
 }
 
 /* Timeline -END- */
@@ -180,6 +248,28 @@
 .progress-bar .bar-fill {
     height: 100%;
     background: #7c7c7c;
+    width: 0%;
+    transition: width 2s;
+}
+.bar-fill.HTML5.in-viewport {
+    width: 85%;
+    transition-delay: .5s;
+}
+.bar-fill.CSS3.in-viewport {
+    width: 80%;
+    transition-delay: 0.5s;
+}
+.bar-fill.JavaScript.in-viewport {
+    width: 80%;
+    transition-delay: 0.5s;
+}
+.bar-fill.Laravel.in-viewport {
+    width: 70%;
+    transition-delay: 0.5s;
+}
+.bar-fill.VueJS.in-viewport {
+    width: 75%;
+    transition-delay: .5s;
 }
 .skill-controls button {
     display: block;
@@ -200,6 +290,7 @@
     cursor: pointer;
 }
 .skill-controls .icon {
+    opacity: 1;
     font-size: 11pt;
 }
 /* Skills - END - */
@@ -207,6 +298,12 @@
 /* Contacts */
 .contacts {
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.contacts.in-viewport {
+    opacity: 1;
+    transition-delay: .5s;
 }
 .content .social {
     display: flex;
@@ -328,6 +425,12 @@
     overflow: hidden;
     border-radius: 4px;
     box-shadow: 0 0 12px rgb(151, 151, 151);
+    opacity: 0;
+    transition: opacity 1s;
+}
+.project.in-viewport {
+    opacity: 1;
+    transition-delay: .5s;
 }
 .project-img {
     height: 100%;
@@ -390,19 +493,36 @@
 }
 .project-overlay .icon {
     font-size: 11pt;
+    opacity: 1;
 }
 /*  icons */
 .icon {
+    opacity: 0;
     font-size: 22pt;
 }
 .github {
     color: #333;
+    transition: opacity 3s;
 }
 .twitter {
     color: #55acee;
+    transition: opacity 3s;
 }
 .mes {
     color: #0084ff;
+    transition: opacity 3s;
+}
+.github.in-viewport {
+    opacity: 1;
+    transition-delay: .5s;
+}
+.twitter.in-viewport {
+    transition-delay: 1s;
+    opacity: 1;
+}
+.mes.in-viewport {
+    transition-delay: 1.5s;
+    opacity: 1;
 }
 
 /* Footer */
@@ -411,6 +531,9 @@ footer {
     margin: auto;
     text-align: center;
     padding: 25px;
+}
+footer .icon {
+    opacity: 1;
 }
 .footer-wrap {
     display: flex;

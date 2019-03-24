@@ -2,39 +2,39 @@
     <div class="app-timeline">
         <div class="timeline">
             <header>
-                <h1>Education</h1>
+                <h1 v-in-viewport.once>Education</h1>
             </header>
             <div class="timeline-item" v-for="edu in educations" :key="edu.index">
-                <div class="date">
+                <div class="date" v-in-viewport.fully>
                     <h3>{{ edu.date }}</h3>
                 </div>
-                <div class="description">
-                    <h1>
+                <div class="description" v-in-viewport.fully>
+                    <h1 v-in-viewport.fully>
                         {{ edu.school }}
                     </h1>
-                    <p class="school">
+                    <p class="school" v-in-viewport.fully>
                         {{ edu.degree }}
                     </p>
-                    <p>
+                    <p v-in-viewport.fully>
                         {{ edu.location }}
                     </p>
                 </div>
             </div>
             <header>
-                <h1>Experience</h1>
+                <h1 v-in-viewport.once>Experience</h1>
             </header>
             <div class="timeline-item" v-for="exp in experience" :key="exp.index">
-                <div class="date">
+                <div class="date" v-in-viewport.fully>
                     <h3>{{ exp.date }}</h3>
                 </div>
-                <div class="description">
-                    <h1>
+                <div class="description" v-in-viewport.fully>
+                    <h1 v-in-viewport.fully>
                         {{ exp.company }}
                     </h1>
-                    <p>
+                    <p v-in-viewport.fully>
                         {{ exp.position }}
                     </p>
-                    <p>
+                    <p v-in-viewport.fully>
                         {{ exp.location }}
                     </p>
                 </div>
